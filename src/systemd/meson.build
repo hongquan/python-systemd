@@ -48,7 +48,7 @@ python.extension_module(
         subdir: 'systemd',
 )
 
-# Install Python modules (matching py_modules in setup.py)
+# Install Python modules
 python.install_sources('__init__.py', 'journal.py', 'daemon.py', subdir: 'systemd')
 
 # Install test modules

@@ -13,7 +13,6 @@ python_dep = python.dependency()
 
 libsystemd_dep = dependency('libsystemd')
 
-# Common compile arguments matching setup.py
 common_c_args = [
         '-DPACKAGE_VERSION="@0@"'.format(meson.project_version()),
         '-DLIBSYSTEMD_VERSION=@0@'.format(libsystemd_dep.version()),
