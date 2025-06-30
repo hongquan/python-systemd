@@ -46,6 +46,7 @@ jobs:
         run: |
           sudo apt -y update
           sudo apt -y install gcc libsystemd-dev
+          python -m pip install -U --break-system-packages pip build
 
       - name: Autobuild
         uses: github/codeql-action/autobuild@v3
